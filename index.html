@@ -4,94 +4,147 @@
 <head>
     <title>assoVar</title>
     <meta charset="UTF-8">
-    <link type="text/css" href="styles/main.css " rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a648232faa.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="styles/main.css " rel="stylesheet" type="text/css">
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/a648232faa.js"></script>
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet">
+    <script crossorigin="anonymous"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg opacity-50 fixed-top bg-body-tertiary bg-dark border-bottom border-body" data-bs-theme="dark">
-            <div class="container-fluid">
-                <img src="img/logo_site.png" alt="Bootstrap" height="40vh"/>
-                <a class="navbar-brand" href="#">Asso'Var</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto ">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Préstations</a></li>
-                                <li><a class="dropdown-item" href="#">Loisirs et culture</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Contacter nous</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+<header>
+    <nav class="navbar navbar-expand-lg opacity-75 fixed-top bg-body-tertiary bg-dark border-bottom border-body"
+         data-bs-theme="dark">
+        <div class="container-fluid" style="width:">
+            <img alt="Bootstrap" height="40vh" src="img/logo_site.png"/>
+            <a class="navbar-brand" href="#">Asso'Var</a>
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler" data-bs-target="#navbarSupportedContent"
+                    data-bs-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto ">
+                    <li class="nav-item">
+                        <a aria-current="page" class="nav-link active" href="#">Préstations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a aria-current="page" class="nav-link active" href="#">Loisirs et culture</a>
+                    </li>
+                    <li class="nav-item dropdown" style="display: none">
+                        <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                           role="button">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Préstations</a></li>
+                            <li><a class="dropdown-item" href="#">Loisirs et culture</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Contacter nous</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
 <section>
 
-    <div id="carouselExampleAutoplaying" class="carousel slide border border-light-subtle" data-bs-ride="carousel">
+    <div class="carousel slide border border-light-subtle" data-bs-ride="carousel" id="carouselExampleAutoplaying">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="img/marseille.png" class="d-block w-100" alt="...">
+                <img alt="..." class="d-block w-100" src="img/marseille.png">
             </div>
             <div class="carousel-item">
-                <img src="img/grasse2.png" class="d-block w-100" alt="...">
+                <img alt="..." class="d-block w-100" src="img/grasse2.png">
             </div>
             <div class="carousel-item">
-                <img src="img/barca.png" class="d-block w-100" alt="...">
+                <img alt="..." class="d-block w-100" src="img/barca.png">
             </div>
             <span class=""></span>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleAutoplaying"
+                type="button">
+            <span aria-hidden="true" class="carousel-control-prev-icon"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleAutoplaying"
+                type="button">
+            <span aria-hidden="true" class="carousel-control-next-icon"></span>
             <span class="visually-hidden">Next</span>
         </button>
     </div>
 </section>
 
 <section>
-    <div class="container-fluid border-top border-white border-bottom border-white" style="height: 50px; background-color: rgba( 1, 1, 1, 1); opacity: 80%">
+    <div class="container-fluid border-top border-white border-bottom border-white p-0"
+         style="height: 50px; background-color: rgba( 1, 1, 1, 1); opacity: 80%">
     </div>
 </section>
-<section class="d-flex flex-row mb-3 pt-4 pb-4 border-top border-white" style="background-image: url('https://images.unsplash.com/photo-1477346611705-65d1883cee1e?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1770')">
+<section class=" pt-4 pb-4 border-top border-white"
+         style="height: 110vh; background-image: url('https://images.unsplash.com/photo-1477346611705-65d1883cee1e?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1770')">
 
-    <div class="container-fluid " style="">
-        <div class="card text-bg-secondary m-auto opacity-50" style="width: 18rem;">
-            <img src="img/card/electro_cap_483_212.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">lorem5 Some quick example text to build on the card title and
-                    make up the bulk of the card's content.lorem5 Some quick example text to build on the card title and
-                    make up the bulk of the card's content.</p>
+
+    <div class="container text-center grid gap-0 row-gap-3">
+        <div class="row ">
+            <div class="col">
+                <div class="container d-flex justify-content-center p-0" style="">
+                    <div class="card text-bg-secondary opacity-75" style="width: 75%;">
+                        <img alt="..." class="card-img-top" src="img/card/electro_cap_483_212.png">
+                        <div class="card-body">
+                            <p class="card-text fs-6 fw-light"> text to build on the card title and
+                                make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="container d-flex justify-content-center p-0" style="">
+                    <div class="card text-bg-secondary opacity-75" style="width: 75%;">
+                        <img alt="..." class="card-img-top"
+                             src="img/card/TANDEM-bandeau_presentation_partenaires-483X212.png">
+                        <div class="card-body">
+                            <p class="card-text fs-6 fw-light">text to build on the card title and
+                                make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid" style="">
-        <div class="card text-bg-secondary m-auto opacity-50" style="width: 18rem;">
-            <img src="img/card/TANDEM-bandeau_presentation_partenaires-483X212.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">lorem5 Some quick example text to build on the card title and
-                    make up the bulk of the card's content.lorem5 Some quick example text to build on the card title and
-                    make up the bulk of the card's content.</p>
+        <div class="article">
+            <p style="font: bold 0.7rem Helvetica; color: deepskyblue; opacity: 0.5; margin: 0; padding-block: 10px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque dolorem </p>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="container d-flex justify-content-center p-0" style="">
+                    <div class="card text-bg-secondary opacity-75" style="width: 75%;">
+                        <img alt="..." class="card-img-top" src="img/card/ya_degun_483_212.png">
+                        <div class="card-body">
+                            <p class="card-text  fs-6 fw-light">text to build on the card
+                                title and
+                                make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="container d-flex justify-content-center p-0" style="">
+                    <div class="card text-bg-secondary opacity-75" style="width: 75%;">
+                        <img alt="..." class="card-img-top" src="img/card/visuel_couleurs_urbaines_483_212.png">
+                        <div class="card-body">
+                            <p class="card-text fs-6 fw-light">text to build on the card title
+                                and
+                                make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 </section>
 </body>
 
