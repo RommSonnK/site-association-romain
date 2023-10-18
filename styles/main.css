@@ -14,3 +14,129 @@ body {
 .row {
     z-index: 5;
 }
+
+.page-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7% 4%;
+    width: 100%;
+    background:  linear-gradient( to top,#dc201c,#781ae2);backdrop-filter: drop-shadow()(100%)";
+    background-position: center;
+    background-size: cover;
+}
+
+.form-box {
+    position: relative;
+    width: 550px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: .5s;
+}
+
+ #label-two label {
+    left: 60px
+}
+
+input:focus ~ label, input:focus ~ label {
+    top: -10px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+
+.input-box img {
+    position: absolute;
+    top: 20px;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.forget {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    margin: -15px 0 15px;
+    font_size: .9rem;
+}
+
+.forget label input {
+    margin-right: 60px;
+}
+
+.forget label a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 60px;
+}
+
+.forget label a:hover {
+    text-decoration: underline;
+}
+
+.form-value button {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.register {
+    font-size: .9rem;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register p a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.register p a:hover {
+    text-decoration: none;
+}
