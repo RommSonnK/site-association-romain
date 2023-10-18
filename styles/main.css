@@ -11,3 +11,6 @@ body {
     margin: 0;
 }
 
+.row {
+    z-index: 5;
+}
