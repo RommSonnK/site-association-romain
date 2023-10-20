@@ -11,9 +11,13 @@ body {
     margin: 0;
 }
 
-.row {
-    z-index: 5;
+#card-img-hover-one:hover {
+
 }
+#card-img-hover-two {}
+#card-img-hover-four {}
+#card-img-hover-five {}
+
 
 .page-two {
     display: flex;
@@ -21,7 +25,8 @@ body {
     align-items: center;
     padding: 7% 4%;
     width: 100%;
-    background:  linear-gradient( to top,#dc201c,#781ae2);backdrop-filter: drop-shadow()(100%)";
+    background-image: linear-gradient(rgba(120, 26, 226, 0.5), rgba(120,62, 28, 0.5)),
+    url("../img/john-towner-JgOeRuGD_Y4-unsplash.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -95,7 +100,7 @@ input:focus ~ label, input:focus ~ label {
     justify-content: space-between;
     color: #fff;
     margin: -15px 0 15px;
-    font_size: .9rem;
+    font-size: 0.9rem;
 }
 
 .forget label input {
@@ -122,6 +127,13 @@ input:focus ~ label, input:focus ~ label {
     cursor: pointer;
     font-size: 1rem;
     font-weight: 600;
+    transition: 0.5s ease-in-out;
+}
+
+.form-value button:hover {
+    border: #ffffff solid 1px;
+    background: rgba(0,0,0,0);
+    color: white;
 }
 
 .register {
